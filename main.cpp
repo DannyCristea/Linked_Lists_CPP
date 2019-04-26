@@ -10,7 +10,7 @@ using namespace std;
 void readFile(linkedlist & list, string & file)
 {
 	ifstream readData;
-	int number = 0;
+	int number;
 
 	readData.open(file);
 	while(readData >> number)
@@ -30,6 +30,8 @@ int main()
 
 	readFile(newList, file);
 	average = newList.average();
+	//newList.writeInorder(file);
+	//newList.writeReversed(file);
 
-	return 0;
+		return 0;
 }
