@@ -1,3 +1,5 @@
+// Danny Cristea
+// Section 1
 //begin linkedlist.h
 #ifndef LINKEDLIST_H
 #define LINKEDLIST_H
