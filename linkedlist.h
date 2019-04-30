@@ -8,20 +8,23 @@
 
 using namespace std;
 
-struct node 
+struct node
 {
 	int data;
 	node * next;
 };
 
-class linkedlist 
+class linkedlist
 {
 private:
 	node * head;
+	node * headBackup;
 	int inline count(); // RECURSIVE
 	int inline sum(); // RECURSIVE
-	void inline printList(node* &head);
-	void inline insert(node* &prev, int num);
+	void inline printList(node* head);
+	void inline insert(node* prev, int num);
+	void inline deleteNode(node* head);
+	void inline resetHead(node* headBackup);
 
 public:
 	inline linkedlist();
